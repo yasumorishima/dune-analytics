@@ -31,7 +31,7 @@ On-chain data analysis of **JPYC** (Japan's yen-pegged stablecoin, launched Octo
 
 **Latest date**: 2026-02-12 / **Total unique users**: 124,805
 
-*Last updated: 2026-03-16T02:11:23Z*
+*Last updated: 2026-03-23T02:04:43Z*
 <!-- LATEST_DATA_END -->
 
 ## What This Tracks
