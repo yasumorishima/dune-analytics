@@ -2,7 +2,7 @@
 
 On-chain data analysis of **JPYC** (Japan's yen-pegged stablecoin, launched October 27, 2025) using [Dune Analytics](https://dune.com). Data is automatically fetched weekly via GitHub Actions.
 
-**[View Dashboard on Dune](https://dune.com/shogaku_toushi/jpyc-date)**
+**[View Dashboard on Dune](https://dune.com/shogaku_toushi/jpyc-date)** · **[Data on Hugging Face](https://huggingface.co/datasets/yasumorishima/jpyc-data)**
 
 ![JPYC Dashboard](images/jpyc-dashboard.png)
 
@@ -71,17 +71,18 @@ On-chain data analysis of **JPYC** (Japan's yen-pegged stablecoin, launched Octo
 
 ## Automation
 
-Data is automatically fetched every Monday 09:00 JST via GitHub Actions using the [Dune API](https://docs.dune.com/api-reference/overview/introduction).
+Data is automatically fetched every Monday 09:00 JST via GitHub Actions using the [Dune API](https://docs.dune.com/api-reference/overview/introduction). CSV data is committed to this repo and mirrored to a [Hugging Face dataset](https://huggingface.co/datasets/yasumorishima/jpyc-data) as the canonical cloud store.
 
 ```
-GitHub Actions (cron) → Dune API (get_latest_result) → CSV + README update → git push
+GitHub Actions (cron) → Dune API (get_latest_result, run_query fallback) → CSV + README update → git push + Hugging Face mirror
 ```
 
 ### Setup
 
 1. Generate an API key at [Dune Settings](https://dune.com/settings/api)
 2. Add it as a repository secret: `gh secret set DUNE_API_KEY --body "your-key"`
-3. Push to enable the workflow (or trigger manually via Actions tab)
+3. (Optional) Add a Hugging Face write token to mirror data to a dataset: `gh secret set HF_TOKEN`
+4. Push to enable the workflow (or trigger manually via Actions tab)
 
 ## Files
 
