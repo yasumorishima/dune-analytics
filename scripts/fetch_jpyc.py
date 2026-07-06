@@ -7,6 +7,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 from dune_client.client import DuneClient
+from dune_client.query import QueryBase
 
 # Query IDs on Dune
 QUERIES = {
@@ -48,8 +49,16 @@ def fetch_and_save(dune: DuneClient, query_id: int, name: str, columns: list[str
     """Fetch latest result from Dune and save as CSV. Returns rows."""
     print(f"Fetching {name} (query {query_id})...")
     result = dune.get_latest_result(query_id)
-    rows = result.result.rows
+    if result.result is None or not result.result.rows:
+        # No cached result (expired / never executed) -- run the query fresh.
+        print(f"  No cached result for {name}; executing query...")
+        result = dune.run_query(QueryBase(query_id=query_id))
 
+    if result.result is None:
+        print(f"  No data returned for {name} (skipping)")
+        return []
+
+    rows = result.result.rows
     if not rows:
         print(f"  No data returned for {name}")
         return []

@@ -38,3 +38,12 @@ jobs:
             git commit -m "data: update JPYC data $(date -u +%Y-%m-%d)"
             git push
           fi
+
+      # === Hugging Face mirror (canonical cloud store) ===
+      - name: Install huggingface_hub
+        run: pip install --quiet "huggingface_hub>=0.26"
+
+      - name: Mirror data/ to Hugging Face
+        env:
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+        run: python scripts/upload_hf.py
