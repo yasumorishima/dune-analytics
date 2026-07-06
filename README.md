@@ -11,9 +11,24 @@ On-chain data analysis of **JPYC** (Japan's yen-pegged stablecoin, launched Octo
 <!-- LATEST_DATA_START -->
 | Month | Chain | Issuance | Redemption | Circulating |
 |-------|-------|----------|------------|-------------|
-| 2026-02 | Avalanche | 1.58 | 0 | 1.58 |
-| 2026-02 | Ethereum | 2.07 | 0 | 2.07 |
-| 2026-02 | Polygon | 8.82 | 0 | 8.82 |
+| 2026-07 | Avalanche | 2.74 | 0 | 2.74 |
+| 2026-07 | Ethereum | 7.28 | 0 | 7.28 |
+| 2026-07 | Polygon | 28.12 | 0 | 28.12 |
+| 2026-06 | Avalanche | 2.64 | 0 | 2.64 |
+| 2026-06 | Ethereum | 6.91 | 0 | 6.91 |
+| 2026-06 | Polygon | 26.86 | 0 | 26.86 |
+| 2026-05 | Avalanche | 2.37 | 0 | 2.37 |
+| 2026-05 | Ethereum | 5.58 | 0 | 5.58 |
+| 2026-05 | Polygon | 22.51 | 0 | 22.51 |
+| 2026-04 | Avalanche | 2.13 | 0 | 2.13 |
+| 2026-04 | Ethereum | 4.03 | 0 | 4.03 |
+| 2026-04 | Polygon | 17.71 | 0 | 17.71 |
+| 2026-03 | Avalanche | 1.87 | 0 | 1.87 |
+| 2026-03 | Ethereum | 3.04 | 0 | 3.04 |
+| 2026-03 | Polygon | 14.14 | 0 | 14.14 |
+| 2026-02 | Avalanche | 1.64 | 0 | 1.64 |
+| 2026-02 | Ethereum | 2.32 | 0 | 2.32 |
+| 2026-02 | Polygon | 10.66 | 0 | 10.66 |
 | 2026-01 | Avalanche | 1.49 | 0 | 1.49 |
 | 2026-01 | Ethereum | 1.67 | 0 | 1.67 |
 | 2026-01 | Polygon | 7.43 | 0 | 7.43 |
@@ -27,11 +42,11 @@ On-chain data analysis of **JPYC** (Japan's yen-pegged stablecoin, launched Octo
 | 2025-10 | Ethereum | 0.27 | 0 | 0.27 |
 | 2025-10 | Polygon | 0.46 | 0 | 0.46 |
 
-**Global Total (2026-02)**: Issuance 12.46 B JPY / Redemption 0 B JPY / Circulating 12.46 B JPY
+**Global Total (2026-07)**: Issuance 38.14 B JPY / Redemption 0 B JPY / Circulating 38.14 B JPY
 
-**Latest date**: 2026-02-12 / **Total unique users**: 124,805
+**Latest date**: 2026-07-06 / **Total unique users**: 142,019
 
-*Last updated: 2026-05-11T02:55:05Z*
+*Last updated: 2026-07-06T22:37:26Z*
 <!-- LATEST_DATA_END -->
 
 ## What This Tracks
